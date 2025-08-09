@@ -21,3 +21,8 @@ know more about me
 - [github.com/Mahanth-Maha](https://github.com/Mahanth-Maha)
 - [resume.mahanthyalla.in](https://resume.mahanthyalla.in)
 - [linkedin.mahanthyalla.in](https://linkedin.com/in/mahanthyalla)
+
+
+## Gallery HUGO = thaskarinchuta
+
+[Hugo Gallery Theme](https://github.com/nicokaiser/hugo-theme-gallery)

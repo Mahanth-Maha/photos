@@ -3,7 +3,11 @@ title: "Kannur"
 date: 2025-08-02
 description: "Two days in Kannur — beach, tea, mist & rain."
 categories: ["travel", "india", "kerala"]
-# Optional: choose cover
+params:
+  featured: true
+#   sort_by: Date
+#   sort_order: asc
+
 resources:
   - src: IMG_0043.jpg
     params: { cover: true }

@@ -3,10 +3,13 @@ title: "IISc Main Building"
 date: 2025-07-18
 description: "IISc Iconic Main Building — a blend of history and architecture."
 categories: ["travel", "india"]
+# params:
+#   featured: true
+
 # Optional: choose cover
 resources:
   - src: IMG_6211.JPG
-    params: { cover: true }
+    params: { cover: true}
   # Per-image metadata (title, date, location, tags)
   - src: IMG_6211.JPG
     title: "Main Building at night"

@@ -2,3 +2,7 @@ baseURL = 'https://mahanthyalla.in/photos/'
 languageCode = 'en-us'
 theme = "gallery"
 title = "Maha Photos"
+
+[author]
+  name = "Mahanth Yalla"
+  homepage = "https://mahanthyalla.in"
