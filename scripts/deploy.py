@@ -30,7 +30,8 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 print("💾 Committing local changes in the main project directory...")
 run("git add .", cwd=PROJECT_ROOT)
 try:
-    run('git commit -m "chore: save local changes before deploy"', cwd=PROJECT_ROOT)
+    date_time_stamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    run(f'git commit -m "chore: save local changes before deploy {date_time_stamp}"', cwd=PROJECT_ROOT)
 except SystemExit:
     # No changes to commit; safe to continue
     print("No local changes to commit.")

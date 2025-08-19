@@ -4,6 +4,8 @@ date: '2025-08-01'
 description: Best / Favorite Pictures of Mine
 categories:
 - favorite
+params:
+  weight: 5
 resources:
 - src: MainBuilding_at_Night_best_shot_of_mine.jpg
   title: MainBuilding_at_Night_best_shot_of_mine

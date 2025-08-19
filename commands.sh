@@ -9,6 +9,14 @@ python scripts/gen_index.py content/Kannur_25 ^
   --categories "travel,india,kerala" ^
   --featured --dry-run 
 
+  python scripts/gen_index.py content/MainBuilding ^
+  --common-tags "IISc" ^
+  --default-location "" ^
+  --page-title "IISc Main Building" ^
+  --page-date 2025-07-18 ^
+  --description "IISc Iconic Main Building — a blend of history and architecture." ^
+  --categories "IISc" ^
+  --dry-run 
 
 python scripts/gen_index.py content/Random_DSLR ^
   --common-tags "DSLR,photography" ^
