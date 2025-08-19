@@ -7,11 +7,23 @@ def run(cmd, cwd=None):
     result = subprocess.run(cmd, shell=True, cwd=cwd)
     if result.returncode != 0:
         raise SystemExit(f"❌ Command failed: {cmd}")
+try:
+    import dotenv 
+except ImportError:
+    os.subprocess.run("pip install python-dotenv", shell=True)
+    import dotenv
+
+dotenv.load_dotenv()
 
 # === Config entries (can also set via environment variables if preferred) ===
-REPO_URL = "https://github.com/Mahanth-Maha/photos.git"
-TARGET_BRANCH = "gh-pages"
-PUBLIC_DIR = "public"
+# REPO_URL = "https://github.com/Mahanth-Maha/photos.git"
+# TARGET_BRANCH = "gh-pages"
+# PUBLIC_DIR = "public"
+# PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+REPO_URL = os.getenv("REPO_URL", "https://github.com/Mahanth-Maha/photos.git")
+TARGET_BRANCH = os.getenv("TARGET_BRANCH", "gh-pages")
+PUBLIC_DIR = os.getenv("PUBLIC_DIR", "public")
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 # 1. Commit any changes in main project to prevent checkout errors
