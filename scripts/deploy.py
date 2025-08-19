@@ -58,7 +58,7 @@ run(f"git checkout -B {TARGET_BRANCH}", cwd=public_path)
 run("git add .", cwd=public_path)
 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 try:
-    run(f'git commit -m "🚀 Deploy blog on {timestamp}"', cwd=public_path)
+    run(f'git commit -m "🚀 Deploy Pictures [{timestamp}]"', cwd=public_path)
 except SystemExit:
     # No changes to commit; safe to continue
     print("No changes to commit in public/.")

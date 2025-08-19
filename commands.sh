@@ -58,3 +58,12 @@ python scripts/gen_index.py content/sunset_sunrise ^
   --description "Sun Photography Pictures - Sunrise & Sunset" ^
   --categories "sun" ^
   --dry-run 
+
+  python scripts/gen_index.py content/Maha ^
+  --common-tags "favorite" ^
+  --default-location "" ^
+  --page-title "Best Of All" ^
+  --page-date 2025-08-01 ^
+  --description "Best / Favorite Pictures of Mine" ^
+  --categories "favorite" ^
+  --dry-run 
